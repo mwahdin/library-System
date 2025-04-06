@@ -68,7 +68,7 @@ public class User {
         return gender;
     }
 
-    public int getAge() 
+    public int getAge() {
         return age;
     }
 
