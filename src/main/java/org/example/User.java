@@ -68,7 +68,7 @@ public class User {
         return gender;
     }
 
-    public int getAge() {
+    public int getAge() 
         return age;
     }
 
@@ -80,7 +80,4 @@ public class User {
     void borrowBook (Book book){}
 
     void returnBook (Book book){}
-
-
-
 }
