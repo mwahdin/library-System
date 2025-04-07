@@ -77,7 +77,13 @@ public class User {
     }
 
     //main methods
-    void borrowBook (Book book){}
+    void borrowBook (Book book){
+        borrowedBooks.add(book);
+    }
 
-    void returnBook (Book book){}
+    void returnBook (Book book){
+        if(borrowedBooks.contains(book)){
+            borrowedBooks.remove(book);
+        }
+    }
 }
