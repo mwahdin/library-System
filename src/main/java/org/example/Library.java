@@ -47,4 +47,14 @@ public class Library {
         allUsers.remove(user);
     }
 
+    public void findUserByName(String userName){
+        for(User user : allUsers){
+            if(user.getUserName().equals(userName)){
+                System.out.println("User Founded By Name: " + user.getUserName());
+            }else{
+                System.out.println("User Not Founded By Name: " + user.getUserName());
+            }
+        }
+    }
+
 }

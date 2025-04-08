@@ -2,11 +2,12 @@ package org.example;
 
 import static java.lang.System.*;
 
-public class Book {
+public class Book extends Library{
      //properties
      private String title;
      private String author;
      private int publicationYear;
+     private boolean isAvailable;
 
      //methods
      //constructor
@@ -14,6 +15,7 @@ public class Book {
           this.title = title;
           this.author = author;
           this.publicationYear = publicationYear;
+          isAvailable = true;
      }
 
      //getter & setter
@@ -41,6 +43,13 @@ public class Book {
           }else{
                this.publicationYear = newYear;
           }
+     }
+
+     public boolean isAvailable(){
+          return isAvailable;
+     }
+     public void setAvailable(boolean newAvailable){
+          this.isAvailable = newAvailable;
      }
 
      //display books info
