@@ -89,7 +89,7 @@ public class User {
 
     void returnBook (Book book){
         if(borrowedBooks.contains(book)){
-            book.setAvailable(true)
+            book.setAvailable(true);
             borrowedBooks.remove(book);
             System.out.println(userName + " returned the book: " + book.getTitle());
         }
