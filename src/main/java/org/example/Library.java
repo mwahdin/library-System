@@ -3,14 +3,18 @@ package org.example;
 import java.util.ArrayList;
 
 public class Library {
+
+    //attribute
     private ArrayList<Book> allBooks;
     private ArrayList<User> allUsers;
 
+    //constructor
     public Library() {
         allBooks = new ArrayList<>();
         allUsers = new ArrayList<>();
     }
 
+    //Book Methods
     public void addBook(Book book){
         allBooks.add(book);
     }
@@ -35,6 +39,7 @@ public class Library {
         }
     }
 
+    //User Methods
     public void addUser(User user){
         allUsers.add(user);
     }
