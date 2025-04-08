@@ -78,12 +78,20 @@ public class User {
 
     //main methods
     void borrowBook (Book book){
-        borrowedBooks.add(book);
+        if(book.isAvailable()){
+            book.setAvailable(false);
+            borrowedBooks.add(book);
+            System.out.println(userName + " borrowed the book: " + book.getTitle());
+        }else{
+            System.out.println("User Not Borrowed Book: " + book.getTitle());
+        }
     }
 
     void returnBook (Book book){
         if(borrowedBooks.contains(book)){
+            book.setAvailable(true)
             borrowedBooks.remove(book);
+            System.out.println(userName + " returned the book: " + book.getTitle());
         }
     }
 }

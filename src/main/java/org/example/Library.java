@@ -15,6 +15,18 @@ public class Library {
     }
 
     //Book Methods
+    public void checkBookAvailability(String bookTitle) {
+        for(Book book : allBooks) {
+            if(book.getTitle().equals(bookTitle)) {
+                if(book.isAvailable()){
+                    System.out.println("the Book \"" + bookTitle + "\" is available");
+                }else{
+                    System.out.println("the Book \"" + bookTitle + "\" is not available");
+                }
+            }
+        }
+    }
+
     public void addBook(Book book){
         allBooks.add(book);
     }
