@@ -6,6 +6,7 @@ public class Main {
 
         Book book1 = new Book("Java Programming", "John Doe", 1980);
         Book book2 = new Book("Data Structures", "jane Smith", 1994);
+        Book book3 = new Book("agant", "", 1980);
 
         library.addBook(book1);
         library.addBook(book2);
@@ -16,5 +17,6 @@ public class Main {
         user1.borrowBook(book2);
         user1.returnBook(book1);
         library.displayAllBooks();
+
     }
 }
