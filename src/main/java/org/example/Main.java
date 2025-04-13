@@ -18,6 +18,7 @@ public class Main {
         user1.borrowBook(book2);
         user1.returnBook(book1);
         user1.borrowBook(book3);
+        user1.borrowBook(book3);
         library.displayAllBooks();
 
     }
